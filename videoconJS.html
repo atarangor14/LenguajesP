@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa con HTML,CSS Y JavaScript</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Ejemplo.js">
+    <script src="/Ejemplo.js"></script>
+    <link rel="shortcut icon" href="img/iconodiseño.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</head>
+<body>
+
+
+<section>
+    <div class="video2">
+        <video id="videoPlayer" controls width="250" height="450">
+            <source src="img/_-Cómo-Mostrar-Superíndices-y-Subíndices-en-HTML-_Shorts.webm" type="video/webm">
+            Your browser does not support HTML5 video.
+          </video>
+    </div>
+   
+</section>
+    
+<div class="controles">
+    <button class="btn btn-primary" onclick="playPause()">Play/Pause</button>
+    <button class="btn btn-secondary" onclick="reload()">Reload</button>
+    <button class="btn btn-success" onclick="makeLarge()">Large</button>
+    <button class="btn btn-danger" onclick="makeSmall()">Small</button>
+    <button class="btn btn-warning" onclick="makeNormal()">Normal</button>
+    <br><br>
+</div>
+<script> 
+    var video = document.getElementById("videoPlayer");
+    function playPause() { 
+        if (video.paused) 
+            video.play(); 
+        else 
+            video.pause(); 
+    }
+    function reload() { 
+       video.load(); 
+    }
+    function makeLarge() { 
+        video.width = 1000; 
+    }
+    function makeSmall() { 
+        video.width = 250; 
+    } 
+    function makeNormal() { 
+        video.width = 500; 
+    } 
+    </script>
+</body>
+</html>

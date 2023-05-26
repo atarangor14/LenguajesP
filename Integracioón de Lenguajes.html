@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa con HTML,CSS Y JavaScript</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Ejemplo.js">
+    <script src="/Ejemplo.js"></script>
     <link rel="shortcut icon" href="img/iconodiseño.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </head>
 <body>
     <header>
@@ -50,10 +54,11 @@
         <section class="audio-video">
             <div class="video">
                 <h4 class="titulo">Video</h4>
-                <video controls width="600" 
+                <video id="video" controls  width="600" 
                 height="400" >
                     <!--<source src="img/_-Cómo-Mostrar-Superíndices-y-Subíndices-en-HTML-_Shorts.ogg" type="video/ogg"/> -->
                     <source src="img/_-Cómo-Mostrar-Superíndices-y-Subíndices-en-HTML-_Shorts.webm" type="video/webm"/>
+                 
                 </video>
             <div class="Audio">
                 <h4 class="titulo">Audio</h4>
@@ -64,6 +69,13 @@
             </div>
             </div>
             
+        </section>
+        <section>
+            <div class="contenedor-2">
+                <h2 class="titulo">Da clic en el boton para ver un ejemplo de JavaScript</h2>
+                <a  class="btn btn-primary" href="videoconJS.html">JavaScript Ejemplo</a>
+                
+            </div>
         </section>
         <section class="portafolio">
             <div class="contenedor ">
@@ -107,7 +119,7 @@
                     <img src="img/face1.jpg" alt="">
                     <div class="contenido-texto-card">
                         <h4>Alejandro Tarango Ronquillo</h4>
-                        <p>Con estos eslementos se puede realizar paginas muy buenas </p>
+                        <p>Con estos elementos se puede realizar paginas muy buenas </p>
                     </div>
                 </div>
                 <div class="card">

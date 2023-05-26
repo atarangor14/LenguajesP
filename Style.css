@@ -248,3 +248,16 @@ footer{
     width: 100;
     height: 350;
 }
+.contenedor-2{
+    text-align: center;
+    padding: 60px;
+}
+
+.controles{
+    margin-top: 60px;
+    text-align: center;
+}
+.video2{
+    margin-top: 60px;
+    text-align: center;
+}
